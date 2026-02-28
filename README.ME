@@ -1,0 +1,133 @@
+JSONPlaceholder API Automation 🧪
+
+Automated API testing suite for the JSONPlaceholder REST API built with Playwright and TypeScript.
+This project contains end-to-end automated tests covering core REST API operations including creation, retrieval, update, and deletion of Posts and Todos resources.
+
+👩‍💻 Author
+
+Taguhi Gegoghlanyan
+QA Automation Engineer | Playwright | API Testing
+GitHub: https://github.com/gtaguhi89
+
+📌 Project Overview
+
+The goal of this project is to automate tests for the JSONPlaceholder public REST API:
+
+🔗 https://jsonplaceholder.typicode.com
+
+The suite covers:
+
+✔ HTTP status code verification
+✔ Proper CRUD (Create, Read, Update, Delete) workflows
+✔ Response validation
+✔ Path and query parameter handling
+✔ Negative testing scenarios
+
+This automation suite is written in TypeScript and uses Playwright API testing for stability, scalability, and clean structure.
+
+    🛠 Tech Stack
+Technology	          Purpose
+Playwright	          API automation framework
+TypeScript	          Strong typing & maintainable code
+Node.js & npm	      Dependency management
+REST API testing	  API validation logic
+
+📂 Project Structure
+
+jsonplaceholder-api/
+│
+├── tests/
+│   └── api/
+│       ├── posts_api.spec.ts
+│       └── todos_api.spec.ts
+│
+├── playwright.config.ts
+├── package.json
+├── .gitignore
+├── README.md
+└── node_modules/
+
+🔧 Installation
+📥 1. Clone the repository
+
+git clone https://github.com/gtaguhi89/jsonplaceholder-api.git
+
+📁 2. Navigate to project folder
+cd jsonplaceholder-api
+
+📦 3. Install dependencies
+npm install
+
+📌 4. Install Playwright browsers (if required)
+npx playwright install
+
+🚀 Running Tests
+
+Run all tests
+npx playwright test
+
+Run tests in UI mode
+npx playwright test --ui
+
+Run only Posts tests
+npx playwright test --grep "@post"
+
+Run only Todos tests
+npx playwright test --grep "@todo"
+
+🧪 Test Coverage
+✅ Posts API
+
+✔ Create a new post
+✔ Retrieve all posts
+✔ Retrieve post by ID
+✔ Update post (PUT)
+✔ Partial update (PATCH)
+✔ Delete post
+✔ Negative test (invalid ID)
+
+✅ Todos API
+
+✔ Create a new todo
+✔ Retrieve all todos
+✔ Retrieve todo by ID
+✔ Update todo (PUT)
+✔ Partial update (PATCH)
+✔ Delete todo
+✔ Negative test (invalid ID)
+
+🔎 Example Validations
+Common assertions include:
+
+expect(response.status()).toBe(200);
+expect(response.status()).toBe(201);
+expect(response.status()).toBe(404);
+
+- Validate required fields in response body
+- Verify returned JSON structure
+- Validate query and path parameters
+- Confirm correct CRUD behavior
+
+🎯 Key Skills Demonstrated
+This project highlights:
+
+- API automation using Playwright
+- End-to-end CRUD validation
+- Path & query parameter handling
+- Negative scenario testing
+- Clean, maintainable TypeScript code structure
+
+📈 Project Benefits
+This suite showcases essential QA automation competencies:
+
+✔ Designing complete API workflows
+✔ Validating backend service behavior
+✔ Writing scalable and reusable API tests
+✔ Handling positive and negative test scenarios
+
+📫 Contact & Portfolio
+
+Taguhi Gegoghlanyan — QA Automation Engineer
+GitHub: https://github.com/gtaguhi89
+
+⭐ Feel free to explore the project and connect for collaboration or questions!
