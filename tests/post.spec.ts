@@ -18,7 +18,7 @@ const updatedData = {
 const partialUpdatedData = {
   body: "HELLO!!!"
 }
-test.describe('JSONPlaceholder API Posts', ()=>{
+test.describe('JSONPlaceholder API Posts @post', ()=>{
   
   test('POST creat a new Post', async({request})=>{
     const response = await request.post('https://jsonplaceholder.typicode.com/posts',{
